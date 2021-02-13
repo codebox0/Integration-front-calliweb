@@ -1,0 +1,231 @@
+html {
+  font-family: Arial sans-serif; }
+
+.flex-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-around;
+  align-content: flex-start; }
+  .flex-container .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: max-content;
+    width: 90%;
+    margin-bottom: 15px; }
+    .flex-container .flex-row .flex-card {
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      border-bottom: whitesmoke 1px solid;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      width: 400px;
+      animation-name: fadeIn;
+      animation-duration: 2.5s;
+      animation-fill-mode: both;
+      transition: padding-bottom 0.1s ease; }
+      .flex-container .flex-row .flex-card:hover {
+        padding-bottom: 5px;
+        width: 100.2%; }
+      .flex-container .flex-row .flex-card .flex-card-banner {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 100%;
+        padding-bottom: 0;
+        animation: slideInLeft 1s ease-in both; }
+        .flex-container .flex-row .flex-card .flex-card-banner .flex-card-cover-row {
+          display: flex;
+          height: 48%;
+          background: gainsboro;
+          justify-content: space-between;
+          align-items: center;
+          overflow: hidden; }
+          .flex-container .flex-row .flex-card .flex-card-banner .flex-card-cover-row span {
+            justify-content: center; }
+            .flex-container .flex-row .flex-card .flex-card-banner .flex-card-cover-row span span {
+              color: mediumvioletred;
+              font-size: xx-large; }
+          .flex-container .flex-row .flex-card .flex-card-banner .flex-card-cover-row .flex-title {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-content: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            margin-left: 25px; }
+          .flex-container .flex-row .flex-card .flex-card-banner .flex-card-cover-row .flex-cover {
+            justify-content: flex-end;
+            margin-right: -30px;
+            overflow: hidden;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both; }
+      .flex-container .flex-row .flex-card .flex-card-tags-top {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bolder;
+        color: white;
+        flex-grow: 0; }
+        .flex-container .flex-row .flex-card .flex-card-tags-top span {
+          display: flex;
+          width: fit-content;
+          align-self: flex-start;
+          padding: 1%;
+          align-items: center; }
+        .flex-container .flex-row .flex-card .flex-card-tags-top .flex-promo {
+          background: mediumvioletred; }
+        .flex-container .flex-row .flex-card .flex-card-tags-top .flex-delay {
+          background: skyblue; }
+        .flex-container .flex-row .flex-card .flex-card-tags-top .flex-collection {
+          background: cadetblue; }
+      .flex-container .flex-row .flex-card .flex-card-img {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        animation: fadeIn 1.5s ease-in both;
+        width: -webkit-fill-available; }
+      .flex-container .flex-row .flex-card .flex-card-info {
+        flex-grow: 3; }
+        .flex-container .flex-row .flex-card .flex-card-info .flex-content-text {
+          display: flex;
+          justify-content: space-between;
+          flex-grow: 2; }
+          .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-info {
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            width: 60%;
+            padding-bottom: 3%; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-info span:nth-child(3n) {
+              font-weight: lighter;
+              font-size: medium;
+              color: gray; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-info span:nth-child(3n+1) {
+              font-size: medium;
+              font-weight: bolder; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-info span:nth-child(3n+2) {
+              font-size: large;
+              font-weight: normal; }
+          .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-value {
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-top: 3%;
+            font-weight: bold;
+            width: 40%; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-value .flex-reduction {
+              font-weight: bold;
+              font-size: larger;
+              color: mediumvioletred; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-value .flex-date-title {
+              font-weight: bolder;
+              font-size: large;
+              color: gray; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-value .flex-price {
+              font-size: x-large;
+              font-weight: bold;
+              color: black; }
+              .flex-container .flex-row .flex-card .flex-card-info .flex-content-text .flex-value .flex-price .flex-old-price {
+                text-decoration: line-through;
+                color: darkgray; }
+        .flex-container .flex-row .flex-card .flex-card-info .flex-content-tags {
+          display: flex;
+          justify-content: space-between;
+          font-weight: bolder;
+          color: gray;
+          font-size: x-small;
+          color: white;
+          flex-grow: 1; }
+          .flex-container .flex-row .flex-card .flex-card-info .flex-content-tags span {
+            display: flex;
+            width: fit-content;
+            align-self: flex-start;
+            color: gray;
+            align-items: center; }
+          .flex-container .flex-row .flex-card .flex-card-info .flex-content-tags span:nth-child(2n+1) {
+            font-size: smaller; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-tags span:nth-child(2n+1) .flex-dot {
+              height: 15px;
+              width: 15px;
+              border-radius: 50%;
+              display: inline-block;
+              background: skyblue;
+              opacity: 0.5; }
+            .flex-container .flex-row .flex-card .flex-card-info .flex-content-tags span:nth-child(2n+1) .flex-dot:nth-child(2n) {
+              position: relative;
+              margin-left: -10px;
+              background: greenyellow;
+              margin-right: 10px; }
+  .flex-container .flex-row:nth-child(2n) {
+    flex-direction: row-reverse; }
+
+@media only screen and (min-width: 1380px) {
+  .flex-card {
+    flex: 0 32%;
+    margin-left: 2%; }
+  .flex-card-box {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+    justify-content: space-evenly; } }
+
+@media only screen and (max-width: 1379px) {
+  .flex-row .flex-card {
+    width: 300px; }
+    .flex-row .flex-card .flex-card-img img {
+      width: 70%; } }
+
+@media screen and (max-width: 1379px) and (min-width: 860px) {
+  .flex-row {
+    width: 100%;
+    justify-content: space-evenly; }
+    .flex-row .flex-card {
+      width: 300px; }
+      .flex-row .flex-card .flex-card-img img {
+        width: 70%; } }
+
+@media screen and (max-width: 920px) {
+  .flex-row {
+    width: 100% !important;
+    justify-content: space-evenly; }
+    .flex-row .flex-card {
+      width: 300px; }
+      .flex-row .flex-card .flex-card-img img {
+        width: 70%; } }
+
+/* Animation The animation code */
+@keyframes back {
+  from {
+    margin-left: 1%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(10%);
+    visibility: visible; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-10%);
+    visibility: visible; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
